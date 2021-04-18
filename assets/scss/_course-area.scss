@@ -1,0 +1,231 @@
+.course-area {
+    background-color: #FAF7EE;
+    border-bottom: 1px solid #152F46;
+    .course-content {
+        position: relative;
+        .quite-left {
+            position: absolute;
+            content: "";
+            left: 25px;
+            top: -25px;
+            font-size: 40px;
+        }
+        .quite-right {
+            position: absolute;
+            content: "";
+            right: 0px;
+            bottom: 10px;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            padding-left: 80px;
+            margin-top: 40px;
+            position: relative;
+
+            .quite-left {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+            }
+        }
+
+        a {
+            font-size: 18px;
+            margin-left: 80px;
+            display: inline-block;
+            border-bottom: 1px solid $theme-color;
+            color: $theme-color;
+
+            &:hover {
+                color: #E03D52;
+            }
+        }
+    }
+    .accordion {
+        border-top: 2px solid $theme-color;
+        .single-accordion {
+            .accordion-head {
+                border-bottom: 2px solid $theme-color;
+                
+                @include transition(0.4s);
+                cursor: pointer;
+                h4 {
+                    font-size: 22px;
+                    line-height: 1;
+                    margin: 0;
+                    padding: 25px 0;
+                    font-family: $lato;
+                    position: relative;
+                    margin-bottom: 0;
+                    i {
+                        color: #E03D52;
+                        font-size: 30px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 30px;
+                        @include transition(0.34s);
+                    }
+                }
+                .accordion-body {
+                    background-color: #fff;
+                    padding: 0;
+                    height: 0;
+                    width: 100%;
+                    overflow: hidden;
+                    opacity: 0;
+                    visibility: hidden;
+                    @include transition(0.3s);
+                    p {
+                        font-size: 18px;
+                        padding: 25px;
+                        line-height: 28px;
+        
+                        a {
+                            font-size: 18px;
+                            color: $theme-color;
+                            border-bottom: 1px solid $theme-color;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .active {
+                h4 {
+                    i {
+                        transform: translateY(-50%) rotate(-90deg);
+                        @include transition(0.34s);
+                    }
+                }
+                .accordion-body {
+                    @include transition(0.34s);
+                    height: 100%;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+   
+}
+
+
+
+
+
+.section-title {
+    position: relative;
+    h2 {
+        font-weight: bold;
+        font-size: 62px;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+    span {
+        font-family: $dancing;
+        font-weight: bold;
+        font-size: 62px;
+        line-height: 1;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 50.3%;
+        transform: translateX(-50%);
+    }
+    
+}
+
+
+// Responsive 
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .section-title {
+        span {
+            left: 176px;
+            transform: translateX(0);
+        }
+    }
+    .course-area {
+        .accordion {
+            margin-top: 70px;
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .section-title {
+        padding-bottom: 70px;
+        h2 {
+            font-size: 36px;
+        }
+        span {
+           display: none;
+        }
+    }
+    .course-area {
+        .accordion {
+            margin-top: 70px;
+            .single-accordion {
+                .accordion-head {
+                    h4 {
+                        font-size: 18px;
+                    }
+                    .accordion-head {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .course-content {
+            p {
+                padding-left: 0;
+            }
+            .quite-left {
+                left: 0;
+                top: -40px;
+                font-size: 30px;
+            }
+            .quite-right {
+                bottom: 60px;
+                font-size: 30px;
+            }
+            a {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .section-title {
+        padding-bottom: 70px;
+        span {
+            left: 85px;
+            transform: translateX(0);
+        }
+    }
+    .course-area {
+        .accordion {
+            margin-top: 70px;
+        }
+    }
+}
