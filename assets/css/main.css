@@ -502,6 +502,10 @@ label {
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .header-area {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .header-area .main-menu {
     margin-left: 0;
   }
@@ -517,7 +521,7 @@ label {
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .header-area {
-    padding: 20px 100px;
+    padding: 20px 20px;
   }
   .header-area .mobile-menu-icon {
     position: absolute;
@@ -606,14 +610,14 @@ label {
     transition: all 0.3s linear 0s;
   }
   .header-area .header-login a {
-    margin-right: 20px;
+    margin-right: 80px;
   }
   .header-area .header-login .header-join {
     display: none !important;
   }
 
   .sticky-header {
-    padding: 10px 100px;
+    padding: 10px 20px;
     position: fixed;
   }
   .sticky-header .mobile-menu-icon {
@@ -978,7 +982,7 @@ label {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 190px;
+  left: 500px;
   font-size: 30px;
   color: #828282;
   cursor: pointer;
@@ -1060,13 +1064,24 @@ label {
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .slider-area {
+    background-color: red;
+  }
   .slider-area .slider-content .slider-input i {
     right: 280px;
   }
+  .slider-area .slider-image {
+    margin-bottom: 50px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .slider-area {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 100px;
+  }
   .slider-area .slider-content p::after {
-    top: 40%;
+    top: 52%;
   }
   .slider-area .slider-content .slider-input {
     width: 100%;
@@ -1076,6 +1091,9 @@ label {
   }
   .slider-area::before {
     display: none;
+  }
+  .slider-area .slider-image {
+    margin-bottom: 50px;
   }
 
   .slider-social {
@@ -1138,6 +1156,9 @@ label {
   .slider-area::before {
     display: none;
   }
+  .slider-area .slider-image {
+    margin-bottom: 50px;
+  }
 
   .slider-social {
     padding: 0 20px;
@@ -1151,6 +1172,7 @@ label {
   .slider-area {
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 100px;
   }
   .slider-area .slider-content .lattering h2 {
     font-size: 140px;
@@ -1180,6 +1202,9 @@ label {
   }
   .slider-area::before {
     display: none;
+  }
+  .slider-area .slider-image {
+    margin-bottom: 50px;
   }
 
   .slider-social {

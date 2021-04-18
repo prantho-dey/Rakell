@@ -124,6 +124,8 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     .header-area {
+        padding-left: 20px;
+        padding-right: 20px;
         .main-menu {
             margin-left: 0;
             ul {
@@ -149,7 +151,7 @@
 @media (min-width: 768px) and (max-width: 991.98px) { 
     
     .header-area {
-        padding: 20px 100px;
+        padding: 20px 20px;
         // position: relative;
         .mobile-menu-icon {
             position: absolute;
@@ -227,7 +229,7 @@
         }
         .header-login {
             a {
-                margin-right: 20px;
+                margin-right: 80px;
             }
             .header-join {
                 display: none !important ;
@@ -235,7 +237,7 @@
         }
     }
     .sticky-header {
-        padding: 10px 100px;
+        padding: 10px 20px;
         position: fixed;
 
         .mobile-menu-icon {

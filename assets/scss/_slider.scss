@@ -142,7 +142,7 @@
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                right: 190px;
+                left: 500px;
                 font-size: 30px;
                 color: #828282;
                 cursor: pointer;
@@ -252,6 +252,7 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     .slider-area {
+        background-color: red;
         .slider-content {
             .slider-input {
                 i {
@@ -259,16 +260,22 @@
                 }
             }
         }   
+        .slider-image {
+            margin-bottom: 50px;
+        }
     }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .slider-area {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 100px;
         .slider-content {
             p{
                 &::after {
-                    top: 40%;
+                    top: 52%;
                 }
             }
             .slider-input {
@@ -280,6 +287,9 @@
         }
         &::before {
             display: none;
+        }
+        .slider-image {
+            margin-bottom: 50px;
         }
     }
     .slider-social {
@@ -352,6 +362,9 @@
          &::before {
              display: none;
          }
+         .slider-image {
+             margin-bottom: 50px;
+         }
      }   
      .slider-social {
         padding: 0 20px;
@@ -369,6 +382,7 @@
     .slider-area {
        padding-left: 20px;
        padding-right: 20px;
+       padding-top: 100px;
         .slider-content {
             .lattering {
                 h2 {
@@ -405,6 +419,9 @@
         }
         &::before {
             display: none;
+        }
+        .slider-image {
+            margin-bottom: 50px;
         }
     }
     .slider-social {
