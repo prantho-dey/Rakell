@@ -1064,9 +1064,7 @@ label {
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .slider-area {
-    background-color: red;
-  }
+  
   .slider-area .slider-content .slider-input i {
     right: 280px;
   }
