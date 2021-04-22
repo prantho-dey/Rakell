@@ -553,15 +553,22 @@ label {
     transition: all 0.3s linear 0s;
   }
   .header-area .mobile-menu-icon .spiner-top {
-    margin-top: -5px;
+    margin-top: -8px;
+  }
+  .header-area .mobile-menu-icon .spiner-middle {
+    width: 20px;
+    left: 40%;
   }
   .header-area .mobile-menu-icon .spiner-bottom {
-    margin-top: 5px;
+    margin-top: 8px;
   }
   .header-area .slider-show .spiner-top {
     margin-left: -16px;
     transform: rotate(50deg);
     margin-top: -2px;
+  }
+  .header-area .slider-show .spiner-middle {
+    opacity: 0;
   }
   .header-area .slider-show .spiner-bottom {
     margin-left: -15px;
@@ -661,15 +668,22 @@ label {
     transition: all 0.3s linear 0s;
   }
   .header-area .mobile-menu-icon .spiner-top {
-    margin-top: -5px;
+    margin-top: -8px;
+  }
+  .header-area .mobile-menu-icon .spiner-middle {
+    width: 20px;
+    left: 40%;
   }
   .header-area .mobile-menu-icon .spiner-bottom {
-    margin-top: 5px;
+    margin-top: 8px;
   }
   .header-area .slider-show .spiner-top {
     margin-left: -16px;
     transform: rotate(50deg);
     margin-top: -2px;
+  }
+  .header-area .slider-show .spiner-middle {
+    opacity: 0;
   }
   .header-area .slider-show .spiner-bottom {
     margin-left: -15px;
@@ -769,15 +783,22 @@ label {
     transition: all 0.3s linear 0s;
   }
   .header-area .mobile-menu-icon .spiner-top {
-    margin-top: -5px;
+    margin-top: -8px;
+  }
+  .header-area .mobile-menu-icon .spiner-middle {
+    width: 20px;
+    left: 40%;
   }
   .header-area .mobile-menu-icon .spiner-bottom {
-    margin-top: 5px;
+    margin-top: 8px;
   }
   .header-area .slider-show .spiner-top {
     margin-left: -16px;
     transform: rotate(50deg);
     margin-top: -2px;
+  }
+  .header-area .slider-show .spiner-middle {
+    opacity: 0;
   }
   .header-area .slider-show .spiner-bottom {
     margin-left: -15px;
@@ -1064,7 +1085,6 @@ label {
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  
   .slider-area .slider-content .slider-input i {
     right: 280px;
   }
@@ -1384,6 +1404,9 @@ label {
   .course-area .accordion .single-accordion .accordion-head h4 {
     font-size: 18px;
   }
+  .course-area .accordion .single-accordion .accordion-head h4 i {
+    right: 5px;
+  }
   .course-area .accordion .single-accordion .accordion-head .accordion-head p {
     font-size: 16px;
   }
@@ -1396,7 +1419,7 @@ label {
     font-size: 30px;
   }
   .course-area .course-content .quite-right {
-    bottom: 60px;
+    bottom: 30px;
     font-size: 30px;
   }
   .course-area .course-content a {

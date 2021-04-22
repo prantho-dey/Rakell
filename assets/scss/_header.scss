@@ -175,10 +175,14 @@
                 @include transition(0.3s);
             }
             .spiner-top {
-                margin-top: -5px;
+                margin-top: -8px;
+            }
+            .spiner-middle {
+                width: 20px;
+                left: 40%;
             }
             .spiner-bottom {
-                margin-top: 5px;
+                margin-top: 8px;
             }
         }
         .slider-show {
@@ -186,6 +190,9 @@
                 margin-left: -16px;
                 transform: rotate(50deg);
                 margin-top: -2px;
+            }
+            .spiner-middle {
+                opacity: 0;
             }
             .spiner-bottom {
                 margin-left: -15px;
@@ -277,10 +284,14 @@
                 @include transition(0.3s);
             }
             .spiner-top {
-                margin-top: -5px;
+                margin-top: -8px;
+            }
+            .spiner-middle {
+                width: 20px;
+                left: 40%;
             }
             .spiner-bottom {
-                margin-top: 5px;
+                margin-top: 8px;
             }
         }
         .slider-show {
@@ -288,6 +299,9 @@
                 margin-left: -16px;
                 transform: rotate(50deg);
                 margin-top: -2px;
+            }
+            .spiner-middle {
+                opacity: 0;
             }
             .spiner-bottom {
                 margin-left: -15px;
@@ -379,10 +393,14 @@
                 @include transition(0.3s);
             }
             .spiner-top {
-                margin-top: -5px;
+                margin-top: -8px;
+            }
+            .spiner-middle {
+                width: 20px;
+                left: 40%;
             }
             .spiner-bottom {
-                margin-top: 5px;
+                margin-top: 8px;
             }
         }
         .slider-show {
@@ -390,6 +408,9 @@
                 margin-left: -16px;
                 transform: rotate(50deg);
                 margin-top: -2px;
+            }
+            .spiner-middle {
+                opacity: 0;
             }
             .spiner-bottom {
                 margin-left: -15px;
