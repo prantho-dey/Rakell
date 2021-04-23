@@ -47,8 +47,8 @@
     .accordion {
         border-top: 2px solid $theme-color;
         .single-accordion {
+            border-bottom: 2px solid $theme-color;
             .accordion-head {
-                border-bottom: 2px solid $theme-color;
                 
                 @include transition(0.4s);
                 cursor: pointer;
@@ -70,26 +70,23 @@
                         @include transition(0.34s);
                     }
                 }
-                .accordion-body {
-                    background-color: #fff;
-                    padding: 0;
-                    height: 0;
-                    width: 100%;
-                    overflow: hidden;
-                    opacity: 0;
-                    visibility: hidden;
-                    @include transition(0.3s);
-                    p {
+            }
+            .accordion-body {
+                background-color: #fff;
+                padding: 0;
+                width: 100%;
+                @include transition(0.3s);
+                display: none;
+                p {
+                    font-size: 18px;
+                    padding: 25px;
+                    line-height: 28px;
+    
+                    a {
                         font-size: 18px;
-                        padding: 25px;
-                        line-height: 28px;
-        
-                        a {
-                            font-size: 18px;
-                            color: $theme-color;
-                            border-bottom: 1px solid $theme-color;
-                            display: inline-block;
-                        }
+                        color: $theme-color;
+                        border-bottom: 1px solid $theme-color;
+                        display: inline-block;
                     }
                 }
             }
@@ -97,15 +94,11 @@
                 h4 {
                     i {
                         transform: translateY(-50%) rotate(-90deg);
-                        @include transition(0.34s);
                     }
                 }
-                .accordion-body {
-                    @include transition(0.34s);
-                    height: 100%;
-                    visibility: visible;
-                    opacity: 1;
-                }
+                // .accordion-body {
+                //     @include transition(0.34s);
+                // }
             }
         }
     }
