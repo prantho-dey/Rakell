@@ -5,8 +5,12 @@
 	// Mobile Menu
 	$(".mobile-menu-icon").click(function(){
         $(".mobile-menu").toggleClass("menu-show","10");
-    });
+        $(".mobile-menu-icon").toggleClass("slider-show");
+		$('a').click(function(){
+			$(".mobile-menu").removeClass("menu-show");
+		});
 
+    });
 	$('.plate').on('click', function(){
 		$(this).toggleClass('active');
 		$('a').click(function(){
@@ -31,7 +35,8 @@
 
 	// Accordion 
 	$(".accordion-head").click(function(){
-		$(this).toggleClass("active").next().slideToggle(500).parent().siblings().children('.accordion-head').removeClass('.active').next().slideUp(500);
+		$(this).toggleClass("active").next().slideToggle().parent().siblings().children('.accordion-head').removeClass('.active').next().slideUp();
+		
     });
 
 	
