@@ -941,6 +941,15 @@ label {
   padding: 0 130px;
   padding-top: 200px;
 }
+.slider-area::after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: #FAF7EE;
+  top: 0;
+  right: 0;
+}
 .slider-area::before {
   position: absolute;
   content: "";
@@ -1158,6 +1167,9 @@ label {
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .slider-area::after {
+    display: none;
+  }
   .slider-area .slider-content .slider-input i {
     right: 280px;
   }
@@ -1170,6 +1182,9 @@ label {
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 100px;
+  }
+  .slider-area::after {
+    display: none;
   }
   .slider-area .slider-content {
     margin-top: 70px;
@@ -1199,6 +1214,9 @@ label {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 120px;
+  }
+  .slider-area::after {
+    display: none;
   }
   .slider-area .slider-content {
     margin-top: 50px;
@@ -1270,6 +1288,9 @@ label {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 100px;
+  }
+  .slider-area::after {
+    display: none;
   }
   .slider-area .slider-content {
     margin-top: 70px;
