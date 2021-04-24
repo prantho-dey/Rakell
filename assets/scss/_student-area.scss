@@ -142,11 +142,18 @@
         }
         .student-button {
             button {
-                margin-top: 20px;
+                margin-top: 0px;
+                font-size: 20px;
+                padding: 22px 50px;
             }
         }
         .student-read-more {
             margin-bottom: 50px;
+        }
+        .student-input {
+            input {
+                height: 74px;
+            }
         }
     }
     .white-section {
@@ -225,9 +232,16 @@
                 }
             }
         }
+        .student-input {
+            input {
+                height: 65px;
+            }
+        }
         .student-button {
             button {
-                margin-top: 20px;
+                margin-top: 0px;
+                padding:15px 30px;
+                font-size: 20px;
             }
         }
         .student-read-more {

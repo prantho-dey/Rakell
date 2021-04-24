@@ -154,33 +154,6 @@
         padding: 20px 20px;
         // position: relative;
         .mobile-menu-icon {
-            // position: absolute;
-            // width: 50px;
-            // height: 38px;
-            // background-color: #152f46;
-            // right: 50px;
-            // top: 50%;
-            // transform: translateY(-50%);
-            // border-radius: 10px;
-            // @include transition(0.3s);
-
-            // // New burgers
-            // svg {
-            //     height: 80px;
-            //     position: absolute;
-            //     width: 80px;
-            //   }
-            //   .plates {
-            //     display: flex;
-            //     flex-wrap: wrap;
-            //     max-height: 160px;
-            //     width: 640px;
-            //   }
-            //   @media (max-width: 640px) {
-            //     .plates {
-            //       width: 320px;
-            //     }
-            //   }
             svg {
                 height: 80px;
                 position: absolute;
@@ -242,43 +215,8 @@
                 transition: transform 400ms 350ms;
               }
               
-
-            // .spiner {
-            //     width: 30px;
-            //     height: 3px;
-            //     background-color: #fff;
-            //     position: absolute;
-            //     top: 50%;
-            //     left: 50%;
-            //     transform: translate(-50%, -50%);
-            //     @include transition(0.3s);
-            // }
-            // .spiner-top {
-            //     margin-top: -8px;
-            // }
-            // .spiner-middle {
-            //     width: 20px;
-            //     left: 40%;
-            // }
-            // .spiner-bottom {
-            //     margin-top: 8px;
-            // }
         }
-        .slider-show {
-            .spiner-top {
-                margin-left: -16px;
-                transform: rotate(50deg);
-                margin-top: -2px;
-            }
-            .spiner-middle {
-                opacity: 0;
-            }
-            .spiner-bottom {
-                margin-left: -15px;
-                transform: rotate(-50deg);
-                margin-top: -2px;
-            }
-        }
+        
         .mobile-menu {
             position: absolute;
             background-color: $theme-color;
@@ -314,11 +252,13 @@
             @include transition(0.3s);
         }
         .header-login {
-            a {
-                margin-right: 80px;
+            .header-login {
+              a {
+                margin-right: 20px;
+              }
             }
             .header-join {
-                display: none !important ;
+                margin-right: 75px;
             }
         }
     }
@@ -328,7 +268,7 @@
 
         .mobile-menu-icon {
             .line{
-                stroke: #d3d3d3;
+                stroke: rgb(197, 197, 197);
             }
         }
     }
@@ -337,120 +277,124 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
     .header-area {
-        padding: 20px 20px;
-        // position: relative;
-        .mobile-menu-icon {
+      padding: 20px 20px;
+      .mobile-menu-icon {
 
-            // New burgers
-            svg {
-                height: 80px;
-                position: absolute;
-                width: 80px;
-              }
-              .plates {
-                display: flex;
-                flex-wrap: wrap;
-                max-height: 160px;
-                width: 640px;
-              }
-              .plate {
-                height: 80px;
-                width: 80px;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 15px;
-              }
-              .burger {
-                filter: url(#gooeyness);
-              }
-              .x {
-                transform: scale(0);
-                transition: transform 400ms;
-              }
-              .line {
-                fill: none;
-                stroke: black;
-                stroke-width: 6px;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                transform-origin: 50%;
-                transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
-              }
-              .x .line {
-                stroke-width: 5.5px;
-              }
-              /* First plate */
-              .plate1 .line2 {
-                stroke-dasharray: 40 200;
-                stroke-dashoffset: 0px;
-              }
-              .plate1 .line3 {
-                stroke-dasharray: 40 179;
-                stroke-dashoffset: 0px;
-              }
-              .active .line {
-                transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
-              }
-              .active.plate1 .line1 {
-                transform: scale(0, 1);
-                transition: transform 500ms 100ms;
-              }
-              .active.plate1 .line2 {
-                stroke-dasharray: 5px 200;
-                stroke-dashoffset: -164px;
-              }
-              .active.plate1 .line3 {
-                stroke-dasharray: 5px 179;
-                stroke-dashoffset: -142px;
-              }
-              .active .x {
-                transform: scale(1);
-                transition: transform 400ms 350ms;
-              }
-              
-        }
-        .mobile-menu {
-            position: absolute;
-            background-color: $theme-color;
-            width: 100%;
-            top: 100%;
-            right:0;
-            margin-left: 0px;
-            text-align: center;
-            border-top: 1px solid #fff;
-            overflow: hidden;
-            opacity: 0;
-            visibility: hidden;
-            @include transition(0.3s);
-            height: 0px;
-            z-index: 9999;
-            ul {
-                padding: 20px 0;
-                li {
-                    display: block !important;
+          // New burgers
+          svg {
+              height: 60px;
+              position: absolute;
+              width: 60px;
+              top: 10px;
+              right: 0;
+            }
+            .plates {
+              display: flex;
+              flex-wrap: wrap;
+              max-height: 160px;
+              width: 640px;
+            }
+            .plate {
+              height: 80px;
+              width: 80px;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              right: 15px;
+            }
+            .burger {
+              filter: url(#gooeyness);
+            }
+            .x {
+              transform: scale(0);
+              transition: transform 400ms;
+            }
+            .line {
+              fill: none;
+              stroke: black;
+              stroke-width: 6px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              transform-origin: 50%;
+              transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+            }
+            .x .line {
+              stroke-width: 5.5px;
+            }
+            /* First plate */
+            .plate1 .line2 {
+              stroke-dasharray: 40 200;
+              stroke-dashoffset: 0px;
+            }
+            .plate1 .line3 {
+              stroke-dasharray: 40 179;
+              stroke-dashoffset: 0px;
+            }
+            .active .line {
+              transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+            }
+            .active.plate1 .line1 {
+              transform: scale(0, 1);
+              transition: transform 500ms 100ms;
+            }
+            .active.plate1 .line2 {
+              stroke-dasharray: 5px 200;
+              stroke-dashoffset: -164px;
+            }
+            .active.plate1 .line3 {
+              stroke-dasharray: 5px 179;
+              stroke-dashoffset: -142px;
+            }
+            .active .x {
+              transform: scale(1);
+              transition: transform 400ms 350ms;
+            }
+            
+      }
+      .mobile-menu {
+          position: absolute;
+          background-color: $theme-color;
+          width: 100%;
+          top: 100%;
+          right:0;
+          margin-left: 0px;
+          text-align: center;
+          border-top: 1px solid #fff;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          @include transition(0.3s);
+          height: 0px;
+          z-index: 9999;
+          ul {
+              padding: 20px 0;
+              li {
+                  display: block !important;
 
-                    a {
-                        display: inline-block;
-                        margin: 10px 0;
-                    }
-                }
-            }
+                  a {
+                      display: inline-block;
+                      margin: 10px 0;
+                  }
+              }
+          }
+      }
+      .menu-show {
+          height: 240px;
+          opacity: 1;
+          visibility: visible;
+          @include transition(0.3s);
+      }
+      .header-login {
+        a {
+            margin-right: 10px;
+            font-size: 16px;
         }
-        .menu-show {
-            height: 240px;
-            opacity: 1;
-            visibility: visible;
-            @include transition(0.3s);
+        .header-join {
+            margin-right: 40px;
+            padding: 12px 10px;
+            font-size: 14px;
         }
-        .header-login {
-            a {
-                margin-right: 70px;
-            }
-            .header-join {
-               display: none !important;
-            }
-        }
+      }
     }
     .sticky-header {
         padding: 10px 20px;
@@ -546,21 +490,6 @@
               }
               
         }
-        .slider-show {
-            .spiner-top {
-                margin-left: -16px;
-                transform: rotate(50deg);
-                margin-top: -2px;
-            }
-            .spiner-middle {
-                opacity: 0;
-            }
-            .spiner-bottom {
-                margin-left: -15px;
-                transform: rotate(-50deg);
-                margin-top: -2px;
-            }
-        }
         .mobile-menu {
             position: absolute;
             background-color: $theme-color;
@@ -596,10 +525,10 @@
         }
         .header-login {
             a {
-                margin-right: 70px;
+                margin-right: 15px;
             }
             .header-join {
-                display: none !important;
+                margin-right: 60px;
             }
         }
     }

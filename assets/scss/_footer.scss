@@ -29,7 +29,7 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { 
-   
+ 
  
 }
  
@@ -59,7 +59,26 @@
  
  // Small devices (landscape phones, 576px and up)
  @media (min-width: 576px) and (max-width: 767.98px) { 
+    .footer-area {
+        text-align: center;
+       .footer-content {
+           display: inherit;
+           .footer-copyright {
+               display: inherit;
    
+               p {
+                   margin-top: 10px;
+                   font-size: 16px;
+               }
+           }
+           .footer-theme {
+               p {
+                   margin-top: 10px;
+                   font-size: 16px;
+               }
+           }
+       }
+    }  
     
 }
  

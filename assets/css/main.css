@@ -585,19 +585,6 @@ label {
     transform: scale(1);
     transition: transform 400ms 350ms;
   }
-  .header-area .slider-show .spiner-top {
-    margin-left: -16px;
-    transform: rotate(50deg);
-    margin-top: -2px;
-  }
-  .header-area .slider-show .spiner-middle {
-    opacity: 0;
-  }
-  .header-area .slider-show .spiner-bottom {
-    margin-left: -15px;
-    transform: rotate(-50deg);
-    margin-top: -2px;
-  }
   .header-area .mobile-menu {
     position: absolute;
     background-color: #152F46;
@@ -639,11 +626,11 @@ label {
     -o-transition: all 0.3s linear 0s;
     transition: all 0.3s linear 0s;
   }
-  .header-area .header-login a {
-    margin-right: 80px;
+  .header-area .header-login .header-login a {
+    margin-right: 20px;
   }
   .header-area .header-login .header-join {
-    display: none !important;
+    margin-right: 75px;
   }
 
   .sticky-header {
@@ -651,7 +638,7 @@ label {
     position: fixed;
   }
   .sticky-header .mobile-menu-icon .line {
-    stroke: #d3d3d3;
+    stroke: #c5c5c5;
   }
 }
 @media (max-width: 575.98px) {
@@ -662,9 +649,11 @@ label {
     /* First plate */
   }
   .header-area .mobile-menu-icon svg {
-    height: 80px;
+    height: 60px;
     position: absolute;
-    width: 80px;
+    width: 60px;
+    top: 10px;
+    right: 0;
   }
   .header-area .mobile-menu-icon .plates {
     display: flex;
@@ -767,10 +756,13 @@ label {
     transition: all 0.3s linear 0s;
   }
   .header-area .header-login a {
-    margin-right: 70px;
+    margin-right: 10px;
+    font-size: 16px;
   }
   .header-area .header-login .header-join {
-    display: none !important;
+    margin-right: 40px;
+    padding: 12px 10px;
+    font-size: 14px;
   }
 
   .sticky-header {
@@ -884,21 +876,6 @@ label {
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .header-area .slider-show .spiner-top {
-    margin-left: -16px;
-    transform: rotate(50deg);
-    margin-top: -2px;
-  }
-  .header-area .slider-show .spiner-middle {
-    opacity: 0;
-  }
-  .header-area .slider-show .spiner-bottom {
-    margin-left: -15px;
-    transform: rotate(-50deg);
-    margin-top: -2px;
-  }
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
   .header-area .mobile-menu {
     position: absolute;
     background-color: #152F46;
@@ -944,10 +921,10 @@ label {
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .header-area .header-login a {
-    margin-right: 70px;
+    margin-right: 15px;
   }
   .header-area .header-login .header-join {
-    display: none !important;
+    margin-right: 60px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1194,6 +1171,9 @@ label {
     padding-left: 20px;
     padding-top: 100px;
   }
+  .slider-area .slider-content {
+    margin-top: 70px;
+  }
   .slider-area .slider-content p::after {
     top: 52%;
   }
@@ -1207,7 +1187,7 @@ label {
     display: none;
   }
   .slider-area .slider-image {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .slider-social {
@@ -1219,6 +1199,9 @@ label {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 120px;
+  }
+  .slider-area .slider-content {
+    margin-top: 50px;
   }
   .slider-area .slider-content .lattering h2 {
     font-size: 85px;
@@ -1288,6 +1271,9 @@ label {
     padding-right: 20px;
     padding-top: 100px;
   }
+  .slider-area .slider-content {
+    margin-top: 70px;
+  }
   .slider-area .slider-content .lattering h2 {
     font-size: 140px;
     margin-top: -20px;
@@ -1318,7 +1304,7 @@ label {
     display: none;
   }
   .slider-area .slider-image {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .slider-social {
@@ -1634,10 +1620,15 @@ label {
     margin-top: 0px;
   }
   .student-area .student-button button {
-    margin-top: 20px;
+    margin-top: 0px;
+    font-size: 20px;
+    padding: 22px 50px;
   }
   .student-area .student-read-more {
     margin-bottom: 50px;
+  }
+  .student-area .student-input input {
+    height: 74px;
   }
 
   .white-section span {
@@ -1696,8 +1687,13 @@ label {
   .student-area .single-say .student-read-more a {
     margin-top: 0px;
   }
+  .student-area .student-input input {
+    height: 65px;
+  }
   .student-area .student-button button {
-    margin-top: 20px;
+    margin-top: 0px;
+    padding: 15px 30px;
+    font-size: 20px;
   }
   .student-area .student-read-more {
     margin-bottom: 50px;
@@ -1832,6 +1828,25 @@ label {
 }
 
 @media (max-width: 575.98px) {
+  .footer-area {
+    text-align: center;
+  }
+  .footer-area .footer-content {
+    display: inherit;
+  }
+  .footer-area .footer-content .footer-copyright {
+    display: inherit;
+  }
+  .footer-area .footer-content .footer-copyright p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .footer-area .footer-content .footer-theme p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
   .footer-area {
     text-align: center;
   }
